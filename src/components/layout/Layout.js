@@ -1,19 +1,13 @@
-import { Fragment, useContext } from "react";
-// import { AuthContext } from "../../context/AuthContext";
+import { Fragment } from "react";
 import Navbar from "./Navbar";
 import "./layout.css";
 
 const Layout = ({ children }) => {
-  // const { isLoggedIn } = useContext(AuthContext);
-
   return (
     <Fragment>
       <Navbar />
       <div className="uk-flex">
-        {/* {isLoggedIn && <Sidebar />} */}
-        {/* { isLoggedIn && <BottomNavbar />} */}
-        {/* <main className={isLoggedIn ? "main-logged-in" : ""}>{children}</main> */}
-        <main>{children}</main>
+        <main className="uk-section">{children}</main>
       </div>
     </Fragment>
   );
